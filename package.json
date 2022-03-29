@@ -1,0 +1,30 @@
+{
+  "name": "api-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuqiyuan628/APIs-Webpage.git"
+  },
+  "author": "Tanner Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuqiyuan628/APIs-Webpage/issues"
+  },
+  "homepage": "https://github.com/liuqiyuan628/APIs-Webpage#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "browser-sync": "^2.27.7",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

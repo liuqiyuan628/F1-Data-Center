@@ -1,0 +1,30 @@
+extends layout 
+block layout-content
+  .mainPageContainer
+    .allFlex
+      each s in races
+        each sData in s.RaceTable.Races
+          - var DateF1 = sData.date;
+          - var time = sData.time;
+          - var name = sData.raceName;
+          - var city = sData.Circuit.Location.locality;           
+          - var country = sData.Circuit.Location.country;  
+          - var roundId = sData.round; 
+          a(href=`/race/${roundId}`)
+            .homeFlex
+              p Round #{roundId} 
+              br
+              p #{name}
+              br
+              p #{DateF1}
+              =" "   
+              p in   
+              p #{city}, #{country} 
+        //- p > #{time} <   
+        //- p > #{s.RaceTable.Races[0].Circuit.Location.long} <   
+        //- p > #{sData.Circuit.Location.lat} <   
+        //- p > #{races.MRData.RaceTable.Races[0].Circuit.Location.long} <   
+        //- p #{races.MRData.RaceTable.Races[0].round}
+
+
+

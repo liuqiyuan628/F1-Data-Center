@@ -1,0 +1,187 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 50%;
+  width: 40%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+html {
+  background-size: cover;
+}
+
+#header {
+  width: 100% !important;
+  background-color: aquamarine;
+  padding: 20px 0;
+  text-align: center;
+}
+.header-content {
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.mainPageContainer {
+  text-align: center;
+}
+
+/* home page style */
+
+.allFlex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+}
+.allFlex > * {
+  flex: 1 1 300px;
+}
+.homeFlex {
+  border: #3a0ca3 2px solid;
+  border-radius: 10px;
+}
+.allFlex > a:nth-child(1):hover {
+  color: white;
+  background-color: #f72585;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(2):hover {
+  background-color: #b5179e;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(3):hover {
+  background-color: #7209b7;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(4):hover {
+  background-color: #560bad;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(5):hover {
+  background-color: #480ca8;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(6):hover {
+  background-color: #3a0ca3;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(7):hover {
+  background-color: #3f37c9;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(8):hover {
+  background-color: #4361ee;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(9):hover {
+  background-color: #4895ef;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(10):hover {
+  background-color: #4cc9f0;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(11):hover {
+  background-color: #ffba08;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(12):hover {
+  background-color: #faa307;
+}
+
+.allFlex > a:nth-child(13):hover {
+  background-color: #fc8505;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(14):hover {
+  background-color: #dc2f02;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(15):hover {
+  background-color: #d00000;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(16):hover {
+  background-color: #b40f15;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(17):hover {
+  background-color: #b5179e;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(18):hover {
+  background-color: #7209b7;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(19):hover {
+  background-color: #8e94f2;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(20):hover {
+  background-color: #ff8500;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(21):hover {
+  background-color: #ff8400;
+  transition: ease-in-out 0.3s;
+}
+
+.allFlex > a:nth-child(22):hover {
+  background-color: #ff5900;
+  transition: ease-in-out 0.3s;
+}
