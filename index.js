@@ -10,7 +10,6 @@ dotenv.config();
 
 //set up express object
 const app = express();
-const port = process.env.PORT || "8886";
 
 // set up paths to important folders and files
 
@@ -35,11 +34,6 @@ app.get("/race/:rid", (req, res) => {
 // show the weather information for a selected race
 app.get("/weather", (req, res) => {
   weatherData(res);
-});
-
-//set up server listening
-app.listen(port, () => {
-  console.log(`listening on http://localhost:${port}`);
 });
 
 //f1 LIST data
@@ -99,6 +93,10 @@ function pageDataAll(res, rid) {
     });
   });
 }
-
+const port = process.env.PORT || "8886";
+//set up server listening
+app.listen(port, () => {
+  console.log(`listening on http://localhost:${port}`);
+});
 // /* F1 API Doc:
 // https://documenter.getpostman.com/view/11586746/SztEa7bL#4d61845d-aae4-4bed-a97e-1189abe90c7d */
