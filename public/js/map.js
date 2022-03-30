@@ -10,7 +10,7 @@ function initMap() {
   };
   //  map, centered at race Location
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
+    zoom: 13,
     center: raceLocation,
   });
   // The marker, positioned at race Location

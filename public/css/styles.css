@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-#map {
-  height: 50%;
-  width: 40%;
-}
 
 html,
 body {
@@ -87,6 +83,7 @@ body {
 .homeFlex {
   border: #3a0ca3 2px solid;
   border-radius: 5px;
+  padding-top: 20px;
 }
 
 .homeFlex:hover {
@@ -119,10 +116,9 @@ body {
 }
 .animationText:hover {
   animation-play-state: paused;
-  color: azure;
 }
 .animationText a:hover {
-  color: azure;
+  text-decoration: underline;
 }
 
 .animationText {
@@ -147,4 +143,105 @@ body {
   100% {
     transform: translate3d(-50%, 0, 0);
   }
+}
+/* style card text */
+.homeFlex > b {
+  font-size: 20px;
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+}
+#map {
+  margin: 0 auto;
+  height: 50%;
+  width: 82vw;
+  margin-top: 3em;
+  border: #696969 2px solid;
+  border-radius: 5px;
+  box-shadow: 15px 15px #000080;
+}
+
+#map:hover {
+  transform: translate(4px, 4px);
+  transition: ease-in-out 0.5s;
+  box-shadow: none;
+}
+/* race page style */
+
+/* weather component style */
+.weatherFlex {
+  position: relative;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.tempAndIcon {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.weatherFlex {
+  text-transform: capitalize;
+}
+
+.racePage {
+  max-width: 92vw;
+  margin: 0 auto;
+}
+
+/* hide the lat and long in page*/
+#lat,
+#long {
+  display: none;
+}
+
+.raceFlex {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.racePageTitle {
+  text-align: center;
+  margin: 70px auto;
+}
+
+.racePage h2 {
+  margin-bottom: 5px;
+  font-size: 38px;
+}
+.racePage a:hover {
+  text-decoration: underline;
+}
+
+.circuitInfo,
+.scheduleInfo,
+.weatherApi-container {
+  /* color: white; */
+  background-color: #00ff7f;
+  border-radius: 5px;
+  transform: translate(4px, -4px);
+  box-shadow: 12px 12px #000080;
+  border: black 2px solid;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.circuitInfo:hover,
+.scheduleInfo:hover,
+.weatherApi-container:hover {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+  background-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.racePage ul li {
+  list-style: none;
+  padding-bottom: 3px;
+}
+
+/* footer style */
+footer {
 }

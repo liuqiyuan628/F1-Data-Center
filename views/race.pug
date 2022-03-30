@@ -1,34 +1,44 @@
 extends layout
 block layout-content
-  - var gpData = f1GpData.MRData.RaceTable.Races[0];
-    h1 F1 data for 
-      a(href=`${gpData.url}`) #{gpData.raceName}
-    p this is the Round #{f1GpData.MRData.RaceTable.round} racing of this season. 
-      h2 Circuit Information: 
-      p Circuit Name: #{gpData.Circuit.circuitName}
-      p Country: #{gpData.Circuit.Location.country}
-        =" " 
-        span City: #{gpData.Circuit.Location.locality}
-      h2 Time Schedule: Racing time #{gpData.date} #{gpData.time}
-      ul
-        li First Practice: #{gpData.FirstPractice.date} #{gpData.FirstPractice.time}
-        li Second Practice: #{gpData.SecondPractice.date} #{gpData.SecondPractice.time}
-        if gpData.ThirdPractice
-          li Third Practice: #{gpData.ThirdPractice.date} #{gpData.ThirdPractice.time}
-        if gpData.Sprint
-          li Sprint Racing: #{gpData.Sprint.date} #{gpData.Sprint.time}
-        li Qualifying: #{gpData.Qualifying.date} #{gpData.Qualifying.time}
-        #lat !{f1GpData.MRData.RaceTable.Races[0].Circuit.Location.lat}
-        #long !{f1GpData.MRData.RaceTable.Races[0].Circuit.Location.long}
-    #map
-    script(src='https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY + '&callback=initMap' async='')
-    .city
-    .temp
-    .icon
-    .description
-    .humidity
-    .wind
-    .feels-like
-    .weather
+  .racePage
+    - var gpData = f1GpData.MRData.RaceTable.Races[0];
+      .racePageTitle
+        h2 F1 data for 
+          a(href=`${gpData.url}`) #{gpData.raceName}
+        p this is the Round #{f1GpData.MRData.RaceTable.round} racing of this season.
+      .raceFlex
+        .circuitInfo 
+          h3 Circuit Information: 
+          ul
+            li Circuit Name: #{gpData.Circuit.circuitName}
+            li Country: #{gpData.Circuit.Location.country}
+              =" " 
+              span City: #{gpData.Circuit.Location.locality}
+        .scheduleInfo
+          h3 Time Schedule: 
+          ul
+            li Racing time #{gpData.date} #{gpData.time}
+            li First Practice: #{gpData.FirstPractice.date} #{gpData.FirstPractice.time}
+            li Second Practice: #{gpData.SecondPractice.date} #{gpData.SecondPractice.time}
+            if gpData.ThirdPractice
+              li Third Practice: #{gpData.ThirdPractice.date} #{gpData.ThirdPractice.time}
+            if gpData.Sprint
+              li Sprint Racing: #{gpData.Sprint.date} #{gpData.Sprint.time}
+            li Qualifying: #{gpData.Qualifying.date} #{gpData.Qualifying.time}
+            #lat !{f1GpData.MRData.RaceTable.Races[0].Circuit.Location.lat}
+            #long !{f1GpData.MRData.RaceTable.Races[0].Circuit.Location.long}
+        .weatherApi-container
+          h3(class="city")      
+          .weatherFlex
+            .tempAndIcon
+              img(class="icon" src='')
+              .temp
+            .description
+            .humidity
+            .wind
+            .feels-like
+            .weather
+  #map
+
 
 

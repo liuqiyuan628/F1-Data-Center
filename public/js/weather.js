@@ -40,8 +40,8 @@ let weather = {
     document.querySelector(".feels-like").textContent =
       "Feels Like: " + feels_like + "°C";
     document.querySelector(".weather").classList.remove("loading");
-    document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1600x900/?" + description + "')";
+    // document.body.style.backgroundImage =
+    //   "url('https://source.unsplash.com/1600x900/?" + description + "')";
   },
 };
 
