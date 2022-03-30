@@ -20,15 +20,15 @@ block layout-content
         li Qualifying: #{gpData.Qualifying.date} #{gpData.Qualifying.time}
         #lat !{f1GpData.MRData.RaceTable.Races[0].Circuit.Location.lat}
         #long !{f1GpData.MRData.RaceTable.Races[0].Circuit.Location.long}
-  #map
-  script(src='https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY + '&callback=initMap' async='')
-  .city
-  .temp
-  .icon
-  .description
-  .humidity
-  .wind
-  .feels-like
-  .weather
+    #map
+    script(src='https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY + '&callback=initMap' async='')
+    .city
+    .temp
+    .icon
+    .description
+    .humidity
+    .wind
+    .feels-like
+    .weather
 
 
