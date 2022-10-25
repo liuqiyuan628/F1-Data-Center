@@ -12,4 +12,4 @@ This App is created to display current season F1 Grand Prix data (Time schedule,
  <BR/>
  <h2> App Website </h2>
 
-<a href="https://f1data-station.herokuapp.com/" target="_blank"> Check this project here </a>
+<a href="https://f1datecenter.onrender.com/" target="_blank"> Check this project here </a>
